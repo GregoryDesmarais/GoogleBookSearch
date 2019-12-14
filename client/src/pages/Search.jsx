@@ -32,12 +32,12 @@ class Search extends Component {
                     // Map through the array to convert to an array of objects.
                     results = results.map(result => {
                         result = {
-                            key: result.id,
-                            id: result.id,
+                            key: result.id || "Not available via API",
+                            id: result.id || "Not available via API",
                             title: result.volumeInfo.title,
-                            author: result.volumeInfo.authors,
-                            description: result.volumeInfo.description,
-                            image: result.volumeInfo.imageLinks.thumbnail,
+                            author: result.volumeInfo.authors || ["Author(s) not available via API"],
+                            description: result.volumeInfo.description || "Description not available via API",
+                            image: result.volumeInfo.imageLinks.thumbnail || "Image not available via API",
                             link: result.volumeInfo.infoLink
                         }
                         return result;
@@ -77,7 +77,7 @@ class Search extends Component {
                 <form className="border">
                     <Row fluid>
                         <Col size="md-12">
-                            <p>Book Search</p>
+                            <h3>Book Search</h3>
                         </Col>
                     </Row>
                     <Row fluid>
@@ -92,6 +92,7 @@ class Search extends Component {
                     </Row>
                 </form>
             </Container>
+            <br/><br/>
             <Container fluid>
                 <Row>
                     <Col size="md-12">
