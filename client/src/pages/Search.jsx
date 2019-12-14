@@ -86,7 +86,7 @@ class Search extends Component {
                         </Col>
                     </Row>
                     <Row fluid>
-                        <Col size="md-1" float="right my-2">
+                        <Col size="md-2" float="right my-2">
                             <button type="submit" className="form-control btn btn-primary float-right" onClick={this.handleFormSubmit}>Search</button>
                         </Col>
                     </Row>

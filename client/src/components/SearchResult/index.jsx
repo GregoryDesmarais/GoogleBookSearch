@@ -3,15 +3,7 @@ import React from "react";
 import {Row, Col} from "../Grid"
 
 const SearchResult = props => {
-    return (props.books.length === 0) ? (
-        <div className="card">
-            <div className="card-body">
-                <div>
-                    <h3>Search Results</h3>
-                </div>
-            </div>
-        </div>
-    ) : (
+    return (
             <div className="card">
                 <div className="card-body">
                     <div>
