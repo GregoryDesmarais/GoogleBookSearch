@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose")
 
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -12,6 +13,9 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
 
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks";
+
+mongoose.connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 
 // Define API routes here
