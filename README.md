@@ -2,7 +2,7 @@
 
 ## About
 
-This is a Google Books Search app, utilizing the Google Books API.  It will allow the user to search out information on books, and save the book information to a database for later viewing, or view the book's information on the Google Books website directly.
+This is a Google Books Search app, utilizing the Google Books API.  It will allow the user to search for books, and save the book to a database for later viewing, or view the book's information on the Google Books website directly.
 
 ## Technologies Used
 * ReactJS
