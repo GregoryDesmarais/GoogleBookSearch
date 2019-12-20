@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 //Connect to DB
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://gbs:Access2468@ds349628.mlab.com:49628/heroku_x870zzm5" || "mongodb://localhost/googlebooks";
 mongoose.connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true });
 
 
@@ -32,5 +32,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🌎 ==> API server now on port ${PORT}!`);
+    console.log(`API server accessible here: http://localhost:${PORT} !`);
 });
