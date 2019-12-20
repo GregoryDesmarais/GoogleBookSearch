@@ -8,9 +8,9 @@ const SearchResult = props => {
                 <div className="card-body">
                     <div>
                         <h3>Search Results</h3>
-                        {props.books.map(book => {
+                        {props.books.map((book, idx) => {
                             return (
-                                <li className="list-group-item">
+                                <li className="list-group-item" key={idx}>
                                 <Row>
                                     <h3 style={{width: "100%"}}>{book.title}
                                     <div className="float-right">
