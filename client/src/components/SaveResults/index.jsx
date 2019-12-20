@@ -7,7 +7,7 @@ const SaveResults = props => {
         <div className="card">
             <div className="card-body">
                 <div>
-                    <h3>Search Results</h3>
+                    <h3>Saved Books</h3>
                     {props.books.map((book, idx) => {
                         return (
                             <li className="list-group-item" key={idx}>

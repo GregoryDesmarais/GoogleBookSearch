@@ -56,7 +56,7 @@ class Search extends Component {
         // Save the filtered object, and pass to the saveBook API call.
         savedBooks = savedBooks[0];
         API.saveBook(savedBooks)
-            .then(this.setState({ message: alert("Your book is saved") }))
+            .then(res => this.setState({ message: alert(`Added ${res.data.title} to the list!`) }))
             .catch(err => console.log(err))
     }
 
@@ -82,7 +82,7 @@ class Search extends Component {
                     </Row>
                     <Row fluid>
                         <Col size="md-12">
-                            <input type="text" className="form-control" onChange={this.handleInputChange}/>
+                            <input type="text" className="form-control" onChange={this.handleInputChange} />
                         </Col>
                     </Row>
                     <Row fluid>
@@ -92,7 +92,7 @@ class Search extends Component {
                     </Row>
                 </form>
             </Container>
-            <br/><br/>
+            <br /><br />
             <Container fluid>
                 <Row>
                     <Col size="md-12">
