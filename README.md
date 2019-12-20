@@ -18,28 +18,28 @@ https://gd-googlebooksearch.herokuapp.com/
 ### Home
 Here, the user can search for favorite books.
 
-![home](rmimages/home.png)
+![home](rmImages/home.png)
 
 ### Search/Results
 
 The "Search Results" section will show the API result data from the search.
 
-![search](rmimages/search.png)
+![search](rmImages/search.png)
 
 The user can click the "View Book" button to open a new tab to the Google Books site for that book. 
 Finally, the user can save the book's information to the database via the "Save Book" button.  A pop-up will show that the book was saved to the database.
 
-![search2](rmimages/search2.png)
+![search2](rmImages/search2.png)
 
 ### Saved Books
 
 This page will show all the saved books the used has selected.  
 
-![Saved](rmimages/saved1.png)
+![Saved](/rmImages/saved1.png)
 
 
 Here is a populated version with books saved to the database.
 
 The user can then either to view the book on the Google Books site via the "View Book" button, or remove the book from the saved database by using the "Delete Book" button.
 
-![saved2](rmimages/saved2.png)
+![saved2](/rmImages/saved2.png)
